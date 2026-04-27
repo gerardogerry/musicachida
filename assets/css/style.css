@@ -1,0 +1,143 @@
+body {
+    background: linear-gradient(135deg, #0a0f1f, #121212);
+    color: #e0eaff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    border-bottom: 1px solid #00bfff;
+    box-shadow: 0 0 10px #00bfff50;
+}
+
+/* DROPDOWN */
+.dropdown-menu {
+    background: #121a30;
+    border: 1px solid #00bfff;
+}
+
+.dropdown-item {
+    color: #cfe9ff;
+}
+
+.dropdown-item:hover {
+    background: #00bfff;
+    color: black;
+}
+
+/* TARJETAS */
+.card {
+    background: rgba(20, 30, 60, 0.6);
+    border-radius: 15px;
+    border: 1px solid rgba(0, 191, 255, 0.2);
+    transition: 0.3s;
+    color: #cfe9ff;
+}
+
+.card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 0 20px #00bfff;
+}
+
+/* ARTISTAS */
+.artist-card {
+    background: linear-gradient(145deg, rgba(0,191,255,0.1), rgba(0,0,0,0.6));
+    border: 1px solid rgba(0,191,255,0.3);
+}
+
+.artist-card h5 {
+    color: #4fc3ff;
+    font-weight: bold;
+    text-shadow: 0 0 6px rgba(0,191,255,0.7);
+}
+
+.artist-card:hover h5 {
+    color: #00e1ff;
+    text-shadow: 0 0 12px #00bfff;
+}
+
+/* CANCIONES */
+.song-title {
+    color: #4fc3ff;
+    text-shadow: 0 0 5px #00bfff;
+}
+
+.song-artist {
+    color: #9ad8ff;
+}
+
+/* BOTONES */
+button {
+    background: linear-gradient(135deg, #00bfff, #1e90ff);
+    border: none;
+    color: white;
+}
+
+button:hover {
+    box-shadow: 0 0 15px #00bfff;
+}
+
+/* BOTÓN VOLVER */
+#backBtn {
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#backBtn:hover {
+    background: #00bfff;
+    color: black;
+    box-shadow: 0 0 10px #00bfff;
+}
+
+/* SCROLL SUAVE */
+html {
+    scroll-behavior: smooth;
+}
+/* MASCOTA */
+/* 🐵 MONO SOLO EN PANTALLA INICIAL */
+.music-pet {
+    font-size: 180px; /* 🔥 más grande */
+    animation: bounce 2s infinite;
+    display: inline-block;
+}
+
+/* animación */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* contenedor inicial */
+#emptyState {
+    margin-top: 80px;
+    opacity: 0.9;
+}
+
+#emptyState h5 {
+    color: #4fc3ff;
+    text-shadow: 0 0 10px #00bfff;
+}
+
+/* ANIMACIÓN */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* TEXTO EMPTY */
+#emptyState h5 {
+    color: #4fc3ff;
+    text-shadow: 0 0 8px #00bfff;
+}
+
+#emptyState {
+    opacity: 0.8;
+}

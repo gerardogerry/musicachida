@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Music App PRO</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="assets/img/favicon.svg">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-dark bg-black px-4">
+    <span class="navbar-brand">🎧 Music App PRO</span>
+</nav>
+
+<div class="container mt-4">
+
+    <!-- GENERO -->
+    <div class="dropdown mb-3">
+        <button class="btn btn-primary dropdown-toggle w-100" data-bs-toggle="dropdown">
+            Seleccionar Género 🎵
+        </button>
+        <ul class="dropdown-menu w-100" id="genreMenu"></ul>
+    </div>
+
+    <!-- BUSCADOR -->
+    <input type="text" id="searchArtist" class="form-control mb-3" placeholder="Buscar artista..." disabled>
+
+   <h6 id="selectedGenre"></h6>
+
+<!-- 🔙 BOTÓN VOLVER -->
+<button id="backBtn" class="btn btn-outline-info mb-3 d-none">← Volver</button>
+<!-- 🐵 MASCOTA / EMPTY STATE -->
+<div id="emptyState" class="text-center mt-5">
+
+    <div class="music-pet">
+        🎧🐵
+    </div>
+
+    <h5 class="mt-3">Selecciona un género o busca un artista</h5>
+    <p class="text-secondary">Tu música empezará aquí</p>
+
+</div>
+<!-- 🎤 VISTA ARTISTAS -->
+<div id="artistView">
+    <div id="artistList" class="row"></div>
+</div>
+
+<!-- 🎵 VISTA CANCIONES -->
+<div id="songView" class="d-none">
+    <div id="loader" class="text-center mt-3 d-none">
+        <div class="spinner-border text-info"></div>
+    </div>
+
+    <div id="results" class="row mt-3"></div>
+</div>
+</div>
+
+<footer class="bg-black text-white text-center p-3 mt-4">
+    Gerardo Silva Escorza - 22201128
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="assets/js/app.js"></script>
+
+</body>
+</html>
