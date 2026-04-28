@@ -140,3 +140,11 @@ fetch("https://api.ipify.org?format=json")
 artistView.classList.add("d-none");
 songView.classList.add("d-none");
 searchInput.disabled = false;
+fetch("https://api.ipify.org?format=json")
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById("ip").textContent = data.ip;
+    })
+    .catch(() => {
+        document.getElementById("ip").textContent = "No disponible";
+    });
